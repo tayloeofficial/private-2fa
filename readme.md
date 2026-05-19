@@ -55,4 +55,4 @@ No servers. No tracking.
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/private-2fa.git
+git clone https://github.com/tayloeofficial/private-2fa.git
