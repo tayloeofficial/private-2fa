@@ -1,0 +1,161 @@
+:root{
+  --bg:#f5f7f5;
+  --card:#ffffff;
+  --border:#d9e2d9;
+  --text:#111827;
+  --muted:#5f6b66;
+
+  --accent:#27AA6B;
+  --accent-hover:#132a1c;
+
+  --token-bg:#edf7ef;
+}
+
+body.dark{
+  --bg:#0b1110;
+  --card:#121917;
+  --border:#24312b;
+  --text:#ecfdf3;
+  --muted:#9fb0a7;
+
+  --accent:#27AA6B;
+  --accent-hover:#ffffff;
+
+  --token-bg:#0f1513;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Geist Mono", "JetBrains Mono", monospace;
+  max-width:640px;
+  margin:40px auto;
+  padding:0 16px;
+
+  background:var(--bg);
+  color:var(--text);
+
+  transition:
+    background .2s ease,
+    color .2s ease;
+}
+
+h1{
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:16px;
+  margin:14px 0;
+}
+
+textarea,
+button{
+  width:100%;
+  border-radius:12px;
+  border:1px solid var(--border);
+
+  background:var(--bg);
+  color:var(--text);
+
+  padding:12px;
+  font-size:16px;
+}
+
+textarea{
+  min-height:84px;
+  resize:vertical;
+}
+
+button{
+  cursor:pointer;
+  border:none;
+  font-weight:700;
+  margin-top:10px;
+
+  background:var(--accent);
+  color:white;
+
+  transition:background .15s ease;
+}
+
+button:hover{
+  background:var(--accent-hover);
+}
+
+button.secondary{
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--text);
+}
+
+.token{
+  font-size:3.2rem;
+  letter-spacing:.24rem;
+  font-weight:800;
+  text-align:center;
+
+  padding:18px 12px;
+
+  background:var(--token-bg);
+  border-radius:14px;
+  border:1px solid var(--border);
+}
+
+.meta{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+
+  margin-top:12px;
+
+  color:var(--muted);
+}
+
+.small{
+  font-size:.94rem;
+  color:var(--muted);
+}
+
+code{
+  background:var(--token-bg);
+  padding:2px 6px;
+  border-radius:6px;
+}
+
+
+
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.theme-toggle{
+  width:auto;
+  margin:0;
+
+  padding:10px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:transparent;
+  border:1px solid var(--border);
+
+  color:var(--text);
+}
+
+.theme-toggle svg{
+  display:block;
+}
